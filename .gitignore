@@ -1,0 +1,33 @@
+*.part
+
+.DS_Store
+.vscode/
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+.note
+.env
+logs/
+
+README_VANTU.md
+
+# Chặn không cho push file thực thi của Terraform lên GitHub
+*.exe
+terraform/terraform.exe
+.terraform/
+*.tfstate
+*.tfstate.*
+*.exe
+terraform/terraform.exe
+.terraform/
+*.tfstate
+*.tfstate.*

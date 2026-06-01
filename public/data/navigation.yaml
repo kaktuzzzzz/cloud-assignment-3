@@ -1,0 +1,66 @@
+sidebar:
+  logo: "/public/images/nguyenpanda/png/logo_black_bg.png"
+  brand: "nguyenpanda"
+  items:
+    - id: "home"
+      label: "./home"
+      icon: "fa-home"
+      href: "/"
+      isActive: false
+    - id: "research"
+      label: "./research"
+      icon: "fa-book"
+      href: "/research"
+      isActive: false
+    - id: "projects"
+      label: "./projects"
+      icon: "fa-folder-open"
+      href: "/projects"
+      isActive: false
+    - id: "hpc"
+      label: "./hpc"
+      icon: "fa-microchip"
+      href: "/hpc"
+      isHighlight: true
+      isActive: false
+    - id: "gallery"
+      label: "./gallery"
+      icon: "fa-images"
+      href: "/gallery"
+      isActive: false
+    - id: "archive"
+      label: "./archive"
+      icon: "fa-box-archive"
+      href: "/archive"
+      isActive: false
+    - id: "portal"
+      label: "./portal"
+      icon: "fa-globe"
+      href: "/portal"
+      isActive: false
+footer:
+  left:
+    copyright: "© 2026 Ha Tuong Nguyen"
+    tagline: "Built from scratch"
+    poweredBy:
+      name: "PandaHttpd"
+      description: "A Python web server framework written entirely from scratch with raw sockets"
+      githubUrl: "https://github.com/nguyenpanda/PandaHttpd"
+  right:
+    title: "Connect"
+    links:
+      - platform: "GitHub"
+        icon: "fab fa-github"
+        url: "https://github.com/nguyenpanda"
+      - platform: "LinkedIn"
+        icon: "fab fa-linkedin-in"
+        url: "https://www.linkedin.com/in/nguyenpanda/"
+      - platform: "Email"
+        icon: "fas fa-envelope"
+        url: "mailto:hatuongnguyen0107@gmail.com"
+      - platform: "Facebook"
+        icon: "fab fa-facebook-f"
+        url: "https://www.facebook.com/nguyenpanda/"
+      - platform: "Instagram"
+        icon: "fab fa-instagram"
+        url: "https://www.instagram.com/nguyenpanda/"

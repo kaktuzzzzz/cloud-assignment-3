@@ -1,0 +1,274 @@
+meta:
+  title: "nguyenpanda | HPC Researcher"
+  subtitle: "HPC Researcher | Parallel Computing | GPU/CUDA | Load Balancing"
+  author: "Ha Tuong Nguyen"
+  year: 2026
+tags:
+  - "Systems Engineering"
+  - "Performance Engineering"
+  - "From Scratch Enthusiast"
+about:
+  - "Hello, I am <span class='highlight'>nguyenpanda</span>."
+  - "I'm an undergraduate at <strong>HCMUT</strong>, researching <strong>High-Performance Computing (HPC)</strong>, focusing on load balancing algorithms, GPU optimization, and parallel computing at <a href=\"https://ist.hcmut.edu.vn\" target=\"_blank\">iST</a> and <a href=\"https://hpcc.vn\" target=\"_blank\">HPCC</a>."
+  - "I'm a builder who loves engineering software from scratch to understand how they work. I'm passionate about low-level systems: computer architecture, operating systems, and networks, etc."
+  - "Long-term, I'm pursuing a PhD to work on problems that blend theoretical depth with real-world performance engineering."
+hpc:
+  intro: "My research focuses on accelerating computational workloads through intelligent resource management and parallel algorithm design."
+  areas:
+    - title: "Load Balancing Algorithms"
+      icon: "fa-balance-scale"
+      description: "Researching dynamic non-blocking load balancing (e.g., work-stealing algorithms) for heterogeneous computing clusters."
+      keywords:
+        - "Work Stealing"
+        - "Non-blocking"
+    - title: "GPU Computing"
+      icon: "fa-microchip"
+      description: "Developing optimized algorithms for GPUs using CUDA, focusing on memory coalescing, kernel optimization."
+      keywords:
+        - "CUDA"
+        - "GPU Memory Optimization"
+    - title: "Parallel Computing"
+      icon: "fa-sitemap"
+      description: "Researching shared and distributed memory algorithms using OpenMP, OpenMPI, and hybrid parallelization strategies."
+      keywords:
+        - "OpenMPI"
+        - "OpenMP"
+        - "Hybrid Parallelization"
+    - title: "Performance Analysis"
+      icon: "fa-tachometer-alt"
+      description: "Analyzing and optimizing code for cache efficiency, memory bandwidth, and thread and instruction-level parallelism."
+      keywords:
+        - "Cache Optimization"
+        - "Memory Bandwidth"
+        - "Thread-level Parallelism"
+        - "Vectorization"
+        - "SIMD"
+  affiliations:
+    - name: "iST HCMUT"
+      fullName: "Advanced Institute of Interdisciplinary Science and Technology"
+      url: "https://ist.hcmut.edu.vn"
+      role: "Student Researcher"
+    - name: "HPCC HCMUT"
+      fullName: "High Performance Computing Center"
+      url: "https://hpcc.vn"
+      role: "Student Researcher"
+projects:
+  - id: "pandahttpd"
+    icon: "fa-server"
+    title: "PandaHttpd"
+    description: "A raw Python socket web server framework built from scratch. No frameworks. Multi-threaded. Missing Asynchronous I/O."
+    longDescription: "A complete HTTP/1.1 web server implementation using only Python's socket library. Features include multi-threaded request handling, static file serving, routing, middleware support, and template rendering."
+    tech:
+      - "Python"
+      - "Sockets"
+      - "HTTP"
+      - "Multi-threading"
+      - "From Scratch"
+      - "Client-Server"
+    category:
+      - "Web"
+      - "Systems"
+      - "Networking"
+      - "Python"
+      - "Client-Server"
+      - "From Scratch"
+    url: "https://github.com/nguyenpanda/PandaHttpd"
+    demo: "https://nguyenpanda.com/"
+    isHighlight: true
+    isHPC: true
+    startDate: "2026-01-04"
+    endDate: null
+  - id: "computergraphic"
+    icon: "fa-computer"
+    title: "Computer Graphic on Terminal"
+    description: "Displaying 2D graphics on terminal from scratch. Limitations is the terminal size, resolution, and missing multi-threading."
+    longDescription: "A graphics rendering engine that outputs to the terminal using ASCII characters. Implements basic shapes, transformations, and animations without any graphics libraries."
+    tech:
+      - "C/C++"
+      - "Terminal"
+      - "CV"
+      - "From Scratch"
+    category:
+      - "CV"
+      - "C/C++"
+      - "From Scratch"
+    url: "https://github.com/nguyenpanda/ComputerGraphic"
+    demo: "https://github.com/nguyenpanda/ComputerGraphic/blob/master/README.md"
+    isHighlight: true
+    isHPC: false
+    startDate: "2024-05-24"
+    endDate: "2024-06-17"
+  - id: "florentino"
+    icon: "fa-brain"
+    title: "Florentino AI Package"
+    description: "I am obsessed with coding from scratch, so I only use Numpy for implementing this AI package. No PyTorch, TensorFlow, or JAX, just raw Python and Numpy."
+    longDescription: "A complete deep learning framework implementing forward and backward propagation, various optimizers (SGD, Adam), activation functions, and layer types from scratch using only NumPy."
+    tech:
+      - "Python"
+      - "Numpy"
+      - "CV"
+      - "From Scratch"
+    category:
+      - "CV"
+      - "Python"
+      - "From Scratch"
+    url: "https://github.com/nguyenpanda/florentino"
+    demo: "https://github.com/nguyenpanda/florentino/blob/master/demo/mnist/model.ipynb"
+    isHighlight: false
+    isHPC: false
+    startDate: "2024-08-01"
+    endDate: "2024-10-06"
+  - id: "autograd"
+    icon: "fa-brain"
+    title: "AutoGradient Package"
+    description: "Automatic differentiation for multi-variable functions, supporting symbolic differentiation."
+    longDescription: "An automatic differentiation library that can compute gradients of arbitrary mathematical expressions. Uses AST parsing for symbolic differentiation."
+    tech:
+      - "Python"
+      - "Autograd"
+      - "AST"
+    category:
+      - "Python"
+      - "PPL"
+      - "From Scratch"
+    url: "https://github.com/nguyenpanda/autograd"
+    demo: null
+    isHighlight: false
+    isHPC: false
+    startDate: "2024-10-10"
+    endDate: "2024-10-19"
+  - id: "mips32"
+    icon: "fa-microchip"
+    title: "MIPS32 Calculator"
+    description: "A MIPS32 instruction set simulator and calculator supporting arithmetic, logic, memory, and control instructions."
+    longDescription: "A complete MIPS32 ISA simulator that can execute assembly programs. Includes a debugger, memory visualization, and register state inspection."
+    tech:
+      - "Assembly"
+      - "From Scratch"
+    category:
+      - "From Scratch"
+      - "Low-Level"
+      - "Assembly"
+    url: "https://github.com/nguyenpanda/MIPS32-Calculator/"
+    demo: "https://github.com/nguyenpanda/MIPS32-Calculator/blob/main/CA%20Report/CA_Report.pdf"
+    isHighlight: false
+    isHPC: false
+    startDate: "2024-04-17"
+    endDate: "2024-05-05"
+research:
+  - id: "ip-project"
+    title: "Journey to SC2031: Fundamentals of Parallel and High-performance Computing"
+    venue: "Interdisciplinary Project Report at HPCC HCMUT"
+    abstract: "This report is submitted as part of the Programming Integration Project, formally registered under the topic ``Work Stealing on GPUs''. Rather than presenting a narrowly focused investigation of a single algorithmic technique, the report aims to consolidate fundamental concepts, system-level knowledge, and practical experimentation in the broader domains of Parallel Computing and High-Performance Computing (HPC). This report is submitted as part of the Programming Integration Project and is formally registered under the topic “Work Stealing on GPUs”. Rather than presenting a narrowly focused investigation of a single algorithmic technique, the report aims to consolidate fundamental concepts, system-level knowledge, and practical experimentation in the broader domains of Parallel Computing and High-Performance Computing (HPC). The primary objective of this work is to establish a solid theoretical and experimental foundation covering CPU and GPU architectures, memory hierarchies, cache behavior, synchronization mechanisms, and parallel scheduling strategies. Through a combination of architectural analysis and empirical evaluation, particularly using matrix multiplication workloads implemented with sequential, OpenMP, and CUDA-based approaches, the report demonstrates how low-level design decisions influence performance on modern multicore and manycore systems. Due to its exploratory and integrative nature, the report does not follow a single linear research narrative. Instead, it is structured as a curated collection of concepts, experiments, and observations that reflect the learning trajectory required for advanced HPC research. This work is intended to serve as a preparatory step toward future, more specialized research contributions in parallel runtime systems and GPU scheduling, with long-term aspirations of participating in the Supercomputing (SC) conference."
+    link: "/public/pdf/[2026][PIP_HCMUT][nguyenpanda][v1.0.0].pdf"
+    isHighlight: true
+    isHPC: true
+    date: "2026-01-03"
+    keywords:
+      - "Hardware Cache"
+      - "OpenMP"
+      - "CPU"
+      - "GPU"
+      - "CUDA"
+  - id: "matrix-multiplication"
+    title: "Performance Study of Large-Scale Square Matrix Multiplication Algorithms on Various Parallel Platforms"
+    venue: "Parallel Computing (CO3001) Assignment"
+    abstract: "This report investigates the performance characteristics of square matrix multiplication across three computational paradigms: shared memory, distributed memory, and GPU acceleration."
+    link: "/public/pdf/[2025][CO3067_HCMUT][nguyenpanda_et_al][v1.0.0].pdf"
+    isHighlight: true
+    isHPC: true
+    date: "2025-12-17"
+    keywords:
+      - "Evaluation"
+      - "CUDA"
+      - "OpenMP"
+      - "OpenMPI"
+social:
+  - platform: "GitHub"
+    icon: "fab fa-github"
+    url: "https://github.com/nguyenpanda"
+    class: "github"
+  - platform: "LinkedIn"
+    icon: "fab fa-linkedin-in"
+    url: "https://www.linkedin.com/in/nguyenpanda/"
+    class: "linkedin"
+  - platform: "Email"
+    icon: "fas fa-envelope"
+    url: "mailto:hatuongnguyen0107@gmail.com"
+    class: "email"
+  - platform: "Facebook"
+    icon: "fab fa-facebook-f"
+    url: "https://www.facebook.com/nguyenpanda/"
+    class: "facebook"
+  - platform: "Instagram"
+    icon: "fab fa-instagram"
+    url: "https://www.instagram.com/nguyenpanda/"
+    class: "instagram"
+skills:
+  languages:
+    - "Python"
+    - "C/C++"
+    - "CUDA"
+    - "JavaScript"
+  frameworks:
+    - "OpenMP"
+    - "OpenMPI"
+    - "CUDA"
+    - "PyTorch"
+    - "NumPy"
+    - "Pandas"
+    - "Matplotlib"
+    - "Pydantic"
+    - "FastAPI"
+  tools:
+    - "Git"
+    - "Docker"
+    - "Linux"
+    - "LLVM Toolchain"
+  concepts:
+    - "High-Performance Computing"
+    - "Parallel Computing"
+    - "Load Balancing"
+    - "Distributed Systems"
+terminal:
+  welcomeMessage: "Welcome to NguyenPanda OS v1.0.0 (Stable)"
+  hostname: "nguyenpanda"
+  user: "guest"
+  motd:
+    - "╔══════════════════════════════════════════════════════════════╗"
+    - "║  _   _                            ____                  _    ║"
+    - "║ | \\ | | __ _ _   _ _   _  ___ _ _|  _ \\ __ _ _ __   __| | __ __ ║"
+    - "║ |  \\| |/ _` | | | | | | |/ _ \\ '_ \\ |_) / _` | '_ \\ / _` |/ _` | ║"
+    - "║ | |\\  | (_| | |_| | |_| |  __/ | | |  __/ (_| | | | | (_| | (_| | ║"
+    - "║ |_| \\_|\\__, |\\__,_|\\__, |\\___|_| |_|_|   \\__,_|_| |_|\\__,_|\\__,_| ║"
+    - "║        |___/      |___/                                       ║"
+    - "╚══════════════════════════════════════════════════════════════╝"
+    - ""
+    - "System initialized. Type 'help' for available commands."
+  filesystem:
+    "/":
+      - "home"
+      - "var"
+      - "etc"
+      - "usr"
+    "/home":
+      - "nguyenpanda"
+    "/home/nguyenpanda":
+      - "about.txt"
+      - "projects"
+      - "research"
+      - "contact.md"
+      - ".bashrc"
+    "/var":
+      - "www"
+      - "log"
+    "/var/www":
+      - "projects"
+      - "research"
+    "/etc":
+      - "passwd"
+      - "hosts"
+config:
+  defaultGridColumns: 3
+  animationDuration: 300
+  typingSpeed: 30
