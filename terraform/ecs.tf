@@ -1,6 +1,19 @@
 resource "aws_ecs_cluster" "main" {
   name = "${var.project_name}-cluster"
 }
+
+resource "aws_ecs_cluster_capacity_providers" "main" {
+  cluster_name = aws_ecs_cluster.main.name
+
+  # Sử dụng provider FARGATE mặc định có sẵn của AWS ngầm định
+  capacity_providers = ["FARGATE"]
+
+  default_capacity_provider_strategy {
+    base              = 1
+    weight            = 100
+    capacity_provider = "FARGATE"
+  }
+}
 resource "aws_cloudwatch_log_group" "ecs" {
   name              = "/ecs/${var.project_name}"
   retention_in_days = 7

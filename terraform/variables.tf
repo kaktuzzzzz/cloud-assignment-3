@@ -25,11 +25,11 @@ variable "cpu" {
 }
 variable "memory" {
   description = "Fargate instance memory"
-  default     = "512"
+  default     = "2048"
 }
 variable "desired_count" {
   description = "Number of docker containers to run"
-  default     = 2
+  default     = 4
 }
 variable "domain_name" {
   description = "Custom domain name"
