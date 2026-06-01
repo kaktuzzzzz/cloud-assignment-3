@@ -5,23 +5,24 @@ resource "aws_ecs_cluster" "main" {
 resource "aws_ecs_cluster_capacity_providers" "main" {
   cluster_name = aws_ecs_cluster.main.name
 
-  # Sử dụng provider FARGATE mặc định có sẵn của AWS ngầm định
-  capacity_providers = ["FARGATE"]
+  capacity_providers = [aws_ecs_capacity_provider.main.name]
 
   default_capacity_provider_strategy {
     base              = 1
     weight            = 100
-    capacity_provider = "FARGATE"
+    capacity_provider = aws_ecs_capacity_provider.main.name
   }
 }
+
 resource "aws_cloudwatch_log_group" "ecs" {
   name              = "/ecs/${var.project_name}"
   retention_in_days = 7
 }
+
 resource "aws_ecs_task_definition" "app" {
   family                   = var.project_name
   network_mode             = "awsvpc"
-  requires_compatibilities = ["FARGATE"]
+  requires_compatibilities = ["EC2"]
   cpu                      = var.cpu
   memory                   = var.memory
   execution_role_arn       = aws_iam_role.ecs_task_execution_role.arn
@@ -50,17 +51,26 @@ resource "aws_ecs_task_definition" "app" {
     }
   ])
 }
+
 resource "aws_ecs_service" "main" {
   name            = "${var.project_name}-service"
   cluster         = aws_ecs_cluster.main.id
   task_definition = aws_ecs_task_definition.app.arn
   desired_count   = var.desired_count
-  launch_type     = "FARGATE"
+  
+  capacity_provider_strategy {
+    capacity_provider = aws_ecs_capacity_provider.main.name
+    weight            = 100
+  }
+
+  health_check_grace_period_seconds = 120
+
   network_configuration {
     security_groups  = [aws_security_group.ecs_tasks.id]
-    subnets          = aws_subnet.public[*].id
-    assign_public_ip = true
+    subnets          = aws_subnet.private[*].id
+    assign_public_ip = false
   }
+  
   load_balancer {
     target_group_arn = aws_lb_target_group.app.arn
     container_name   = var.project_name

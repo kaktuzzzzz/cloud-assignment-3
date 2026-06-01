@@ -1,2 +1,25 @@
-images/**
-!images/nguyenpanda
+images/**/*.mov
+images/*.mov
+
+# Ignore specific large image assets (> 10MB)
+images/ist/katus/24_1221.jpg
+images/sheep/love/26_1222_0.jpg
+images/sheep/love/26_1222_1.jpg
+images/sheep/love/26_1222_2.jpg
+images/sheep/love/26_1222_3.jpg
+images/sheep/love/26_1222_4.jpg
+images/sheep/love/26_1222_5.jpg
+images/sheep/love/26_1222_6.jpg
+images/sheep/love/26_1222_7.jpg
+images/sheep/love/26_1222_8.jpg
+images/sheep/love/26_1222_9.jpg
+images/sheep/love/26_1222_10.jpg
+images/sheep/love/26_1222_11.jpg
+images/sheep/love/26_1222_12.jpg
+images/sheep/25_0328.jpg
+images/sheep/25_0329.jpg
+images/sheep/luna2025/25_0101_2.jpg
+
+!images/
+!images/**/
+!images/**/*.{jpg,jpeg,png,gif,svg,webp,ico,webmanifest}

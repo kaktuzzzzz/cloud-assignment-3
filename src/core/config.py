@@ -10,9 +10,9 @@ class Settings(BaseSettings):
     ERRORS_DIR: Path = PUBLIC_DIR / "errors"
     IMAGES_DIR: Path = PUBLIC_DIR / "images"
     
-    HOST: str = "127.0.0.1"
-    PORT: int = 8080
-    RELOAD: bool = True
+    HOST: str = "0.0.0.0"
+    PORT: int = 8000
+    RELOAD: bool = False
     
     GDRIVE_ID: str | None = None
     

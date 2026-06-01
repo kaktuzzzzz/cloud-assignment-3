@@ -1,7 +1,7 @@
 import random
-from locust import HttpUser, task, constant
+from locust import task, constant, FastHttpUser
 
-class NguyenPandaCrazyTest(HttpUser):
+class NguyenPandaCrazyTest(FastHttpUser):
 
     wait_time = constant(0)
 

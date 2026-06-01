@@ -4,6 +4,10 @@ from src.core.config import settings
 
 router = APIRouter()
 
+@router.get("/health")
+async def health():
+    return {"status": "ok"}
+
 @router.get("/", response_class=HTMLResponse)
 async def home():
     return FileResponse(settings.PAGES_DIR / "home.html")

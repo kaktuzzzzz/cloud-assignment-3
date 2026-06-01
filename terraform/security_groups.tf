@@ -15,6 +15,7 @@ resource "aws_security_group" "alb" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
 resource "aws_security_group" "ecs_tasks" {
   name        = "${var.project_name}-ecs-tasks-sg"
   description = "Allow inbound traffic from ALB only"
@@ -25,6 +26,19 @@ resource "aws_security_group" "ecs_tasks" {
     protocol        = "tcp"
     security_groups = [aws_security_group.alb.id]
   }
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+resource "aws_security_group" "ecs_nodes" {
+  name        = "${var.project_name}-ecs-nodes-sg"
+  description = "Security group for ECS nodes"
+  vpc_id      = aws_vpc.main.id
+
   egress {
     from_port   = 0
     to_port     = 0
