@@ -1,5 +1,4 @@
 resource "aws_cloudfront_distribution" "main" {
-  aliases = [var.domain_name]
   origin {
     domain_name = aws_lb.main.dns_name
     origin_id   = "ALBOrigin"
